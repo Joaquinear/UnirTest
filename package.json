@@ -1,0 +1,18 @@
+{
+  "name": "codecepjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx codeceptjs run --features --plugins allure",
+    "tagsRuns":"npx codeceptjs run --grep '@envioFormulario' --verbose --plugins allure",
+    "show-report":"allure serve output"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "codeceptjs": "^3.3.7",
+    "puppeteer": "^19.6.0"
+  }
+}
